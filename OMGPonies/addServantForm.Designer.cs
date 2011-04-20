@@ -36,13 +36,17 @@ namespace OMGPonies
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.tbNameServant = new System.Windows.Forms.TextBox();
+			this.cbWorkshop = new System.Windows.Forms.ComboBox();
+			this.tbPaymentRate = new System.Windows.Forms.TextBox();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.textBox1);
+			this.panel1.Controls.Add(this.tbPaymentRate);
+			this.panel1.Controls.Add(this.cbWorkshop);
+			this.panel1.Controls.Add(this.tbNameServant);
 			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.label2);
 			this.panel1.Controls.Add(this.label1);
@@ -104,12 +108,27 @@ namespace OMGPonies
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Зарплата";
 			// 
-			// textBox1
+			// tbNameServant
 			// 
-			this.textBox1.Location = new System.Drawing.Point(141, 27);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 3;
+			this.tbNameServant.Location = new System.Drawing.Point(141, 27);
+			this.tbNameServant.Name = "tbNameServant";
+			this.tbNameServant.Size = new System.Drawing.Size(100, 20);
+			this.tbNameServant.TabIndex = 3;
+			// 
+			// cbWorkshop
+			// 
+			this.cbWorkshop.FormattingEnabled = true;
+			this.cbWorkshop.Location = new System.Drawing.Point(141, 65);
+			this.cbWorkshop.Name = "cbWorkshop";
+			this.cbWorkshop.Size = new System.Drawing.Size(121, 21);
+			this.cbWorkshop.TabIndex = 4;
+			// 
+			// tbPaymentRate
+			// 
+			this.tbPaymentRate.Location = new System.Drawing.Point(141, 112);
+			this.tbPaymentRate.Name = "tbPaymentRate";
+			this.tbPaymentRate.Size = new System.Drawing.Size(100, 20);
+			this.tbPaymentRate.TabIndex = 5;
 			// 
 			// addServantForm
 			// 
@@ -127,13 +146,15 @@ namespace OMGPonies
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ComboBox cbWorkshop;
+		private System.Windows.Forms.TextBox tbPaymentRate;
+		private System.Windows.Forms.TextBox tbNameServant;
 		private System.Windows.Forms.Button btnCancel;
 		private System.Windows.Forms.Button btnAccept;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Panel panel1;
 	}
 }
