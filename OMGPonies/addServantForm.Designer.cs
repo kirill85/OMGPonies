@@ -129,6 +129,7 @@ namespace OMGPonies
 			this.tbPaymentRate.Name = "tbPaymentRate";
 			this.tbPaymentRate.Size = new System.Drawing.Size(100, 20);
 			this.tbPaymentRate.TabIndex = 5;
+			this.tbPaymentRate.TextChanged += new System.EventHandler(this.TbPaymentRate_TextChanged);
 			// 
 			// addServantForm
 			// 
