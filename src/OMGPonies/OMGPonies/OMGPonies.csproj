@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Services\WorkerXMLParser.cs" />
     <Compile Include="ViewModels\WorkersViewModel.cs" />
     <Compile Include="Views\WorkersView.xaml.cs">
       <DependentUpon>WorkersView.xaml</DependentUpon>
@@ -120,7 +121,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="dataWorkers.xml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
