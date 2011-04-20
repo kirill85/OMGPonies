@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Threading;
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 // Toolkit namespace
 using SimpleMvvmToolkit;
@@ -44,13 +45,13 @@ namespace OMGPonies.Views
 
         #region Properties
 
-        private System.Data.DataTable workers;
-        public System.Data.DataTable Workers
+        private List<Worker> workers;
+        public List<Worker> Workers
         {
             get
             {
                 if (IsInDesignMode) return null;
-                return null;
+                return serviceAgent.ParseFile("dataWorkers.xml");
             }
             set
             {
