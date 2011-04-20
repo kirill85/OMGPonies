@@ -12,5 +12,20 @@ namespace OMGPonies
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            InitializeComponent();
+        }
+
+        [STAThread]
+        public static void Main()
+        {
+            SplashScreen sc = new SplashScreen("SplashScreen.png");
+            sc.Show(true);
+            OMGPonies.App app = new OMGPonies.App();
+            sc.Close(TimeSpan.FromMilliseconds(2000));
+            System.Threading.Thread.Sleep(2000);
+            app.Run(new MainWindow());
+        }
     }
 }
