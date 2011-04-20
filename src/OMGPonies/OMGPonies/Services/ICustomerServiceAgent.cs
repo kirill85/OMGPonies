@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace OMGPonies
@@ -10,6 +11,6 @@ namespace OMGPonies
 
     public interface IWorkersServiceAgent
     {
-        Worker CreateWorker();
+        List<Worker> ParseFile(string FileName);
     }
 }
