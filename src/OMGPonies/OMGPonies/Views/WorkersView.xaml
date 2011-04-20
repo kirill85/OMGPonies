@@ -8,13 +8,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="453" d:DesignWidth="616">
     
-    <Grid x:Name="LayoutRoot" Background="White" Height="309" Width="440" 
+    <Grid x:Name="LayoutRoot" Background="White" Height="328" Width="509" 
           DataContext="{Binding Source={StaticResource Locator}, Path=WorkersViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="260"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <DataGrid Grid.Row="0" Grid.ColumnSpan="1" DataContext="{Binding Path = Workers}" Name="DataGrid"></DataGrid>

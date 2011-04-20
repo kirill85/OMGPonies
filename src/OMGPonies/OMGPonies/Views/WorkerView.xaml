@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="453" d:DesignWidth="616">
     
-    <Grid x:Name="LayoutRoot" Background="White" Height="225" Width="271" 
+    <Grid x:Name="LayoutRoot" Background="White" Height="199" Width="431" 
           DataContext="{Binding Source={StaticResource Locator}, Path=WorkerViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
