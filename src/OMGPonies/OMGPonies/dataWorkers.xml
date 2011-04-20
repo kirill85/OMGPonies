@@ -1,4 +1,10 @@
 ﻿<?xml version="1.0"?>
 <dataWorkers>
-	
+	<worker>
+	<name>Петров В.С.</name>
+	<workshop>Инструментальный</workshop>
+	<salary>25000</salary>
+	</worker>
+	<worker>
+	</worker>
 </dataWorkers>

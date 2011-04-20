@@ -4,6 +4,11 @@
         xmlns:my="clr-namespace:OMGPonies"
         Title="MainWindow" Height="362" Width="723"
         DataContext="{Binding Source={StaticResource Locator}, Path=MainPageViewModel}">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="NavigationCommands.GoToPage" Executed="GoToPageExecuteHandler" CanExecute="GoToPageCanExecuteHandler" />
+    </Window.CommandBindings>
+
     <StackPanel>
         <Menu Height="23" Name="menu1" VerticalAlignment="Top" HorizontalAlignment="Stretch">
             <MenuItem Name="MainMenu" Width="100" Height="20" Header="Главное меню">

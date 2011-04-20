@@ -23,5 +23,15 @@ namespace OMGPonies
         {
             InitializeComponent();
         }
+
+        private void GoToPageExecuteHandler(object sender, ExecutedRoutedEventArgs e)
+        {
+            frmContent.NavigationService.Navigate(new Uri((string)e.Parameter, UriKind.Relative));
+        }
+
+        private void GoToPageCanExecuteHandler(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
     }
 }
