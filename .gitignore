@@ -2,3 +2,5 @@
 /src/OMGPonies/OMGPonies/obj
 *.suo
 *.vs10x
+/OMGPonies/bin
+/OMGPonies/obj
