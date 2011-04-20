@@ -36,13 +36,11 @@ namespace OMGPonies
 			this.учетСлужащихToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.добавитьСведенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.изменитьСведенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.удалитьСведенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.сервисToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.рассчитатьИтоговуюЗарплатуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.создатьИтоговуюТаблицуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.addServant = new System.Windows.Forms.ToolStripButton();
-			this.updateServant = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.deleteServant = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -84,8 +82,7 @@ namespace OMGPonies
 			// 
 			this.учетСлужащихToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.добавитьСведенияToolStripMenuItem,
-									this.изменитьСведенияToolStripMenuItem,
-									this.удалитьСведенияToolStripMenuItem});
+									this.изменитьСведенияToolStripMenuItem});
 			this.учетСлужащихToolStripMenuItem.Name = "учетСлужащихToolStripMenuItem";
 			this.учетСлужащихToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
 			this.учетСлужащихToolStripMenuItem.Text = "Учет служащих";
@@ -101,12 +98,6 @@ namespace OMGPonies
 			this.изменитьСведенияToolStripMenuItem.Name = "изменитьСведенияToolStripMenuItem";
 			this.изменитьСведенияToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
 			this.изменитьСведенияToolStripMenuItem.Text = "Изменить сведения";
-			// 
-			// удалитьСведенияToolStripMenuItem
-			// 
-			this.удалитьСведенияToolStripMenuItem.Name = "удалитьСведенияToolStripMenuItem";
-			this.удалитьСведенияToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-			this.удалитьСведенияToolStripMenuItem.Text = "Удалить сведения";
 			// 
 			// сервисToolStripMenuItem
 			// 
@@ -133,7 +124,6 @@ namespace OMGPonies
 			// 
 			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.addServant,
-									this.updateServant,
 									this.toolStripSeparator1,
 									this.deleteServant,
 									this.toolStripSeparator2});
@@ -153,17 +143,6 @@ namespace OMGPonies
 			this.addServant.Size = new System.Drawing.Size(129, 22);
 			this.addServant.Text = "Добавить служащего";
 			this.addServant.Click += new System.EventHandler(this.ToolStripButton1_Click);
-			// 
-			// updateServant
-			// 
-			this.updateServant.AutoToolTip = false;
-			this.updateServant.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.updateServant.DoubleClickEnabled = true;
-			this.updateServant.Image = ((System.Drawing.Image)(resources.GetObject("updateServant.Image")));
-			this.updateServant.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.updateServant.Name = "updateServant";
-			this.updateServant.Size = new System.Drawing.Size(214, 22);
-			this.updateServant.Text = "Редактировать сведения о служащих";
 			// 
 			// toolStripSeparator1
 			// 
@@ -203,8 +182,8 @@ namespace OMGPonies
 			this.btnCalculate.Image = ((System.Drawing.Image)(resources.GetObject("btnCalculate.Image")));
 			this.btnCalculate.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnCalculate.Name = "btnCalculate";
-			this.btnCalculate.Size = new System.Drawing.Size(98, 22);
-			this.btnCalculate.Text = "toolStripButton2";
+			this.btnCalculate.Size = new System.Drawing.Size(128, 22);
+			this.btnCalculate.Text = "Зарплата сотрудника";
 			// 
 			// btnExport
 			// 
@@ -213,8 +192,8 @@ namespace OMGPonies
 			this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
 			this.btnExport.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnExport.Name = "btnExport";
-			this.btnExport.Size = new System.Drawing.Size(98, 22);
-			this.btnExport.Text = "toolStripButton5";
+			this.btnExport.Size = new System.Drawing.Size(87, 22);
+			this.btnExport.Text = "Создать отчет";
 			// 
 			// MainForm
 			// 
@@ -239,7 +218,6 @@ namespace OMGPonies
 		private System.Windows.Forms.ToolStripButton btnExport;
 		private System.Windows.Forms.ToolStripButton btnCalculate;
 		private System.Windows.Forms.ToolStripButton addServant;
-		private System.Windows.Forms.ToolStripButton updateServant;
 		private System.Windows.Forms.ToolStripButton deleteServant;
 		private System.Windows.Forms.ToolStrip toolStrip2;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -248,7 +226,6 @@ namespace OMGPonies
 		private System.Windows.Forms.ToolStripMenuItem создатьИтоговуюТаблицуToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem рассчитатьИтоговуюЗарплатуToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem сервисToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem удалитьСведенияToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem изменитьСведенияToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem добавитьСведенияToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem учетСлужащихToolStripMenuItem;
