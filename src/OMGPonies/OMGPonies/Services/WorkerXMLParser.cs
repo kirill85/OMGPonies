@@ -5,7 +5,6 @@ using System.Text;
 
 using System.Xml;
 using System.Xml.Linq;
-using System.Linq;
 
 namespace OMGPonies.Services
 {
@@ -20,11 +19,14 @@ namespace OMGPonies.Services
                                     .Elements("worker");
                 foreach (XElement item in xArr)
                 {
-                    foreach (XAttribute attr in item.Attributes()
-                        .Where(i => i.Name.ToString()
-                        .CompareTo("name") == 0))
+                    foreach (XAttribute attr in item.Attributes() )
                     {
-                        // getName ?
+                        if (attr.Name.ToString().CompareTo("name") == 0)
+                        {}
+                        else if (attr.Name.ToString().CompareTo("workshop") == 0)
+                        {}
+                        else if (attr.Name.ToString().CompareTo("salary") == 0)
+                        {}
                     }
                 }
             }

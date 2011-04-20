@@ -10,7 +10,6 @@ namespace OMGPonies
         {
             return new Worker
             {
-                WorkerId = 1,
                 WorkerName = "John Doe",
                 Workshop = "Dallas",
                 Salary = 15000

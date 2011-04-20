@@ -19,21 +19,17 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Worker Id:" Grid.Row="0" />
-        <TextBox Grid.Row="0" Grid.Column="1" Height="30"
-                 Text="{Binding Path=Model.WorkerId}" />
-        <Label Content="Worker Name:" Grid.Row="1" />
-        <TextBox Grid.Row="1" Grid.Column="1" Height="30"
+        <Label Content="Worker Name:" Grid.Row="0" />
+        <TextBox Grid.Row="1" Grid.Column="0" Height="30"
                  Text="{Binding Path=Model.WorkerName}" />
-        <Label Content="Workshop:" Grid.Row="2" />
-        <TextBox Grid.Row="2" Grid.Column="1" Height="30"
+        <Label Content="Workshop:" Grid.Row="1" />
+        <TextBox Grid.Row="1" Grid.Column="1" Height="30"
                  Text="{Binding Path=Model.Workshop}" />
-        <Label Content="Worker Salary:" Grid.Row="3" />
-        <TextBox Grid.Row="3" Grid.Column="1" Height="30"
+        <Label Content="Worker Salary:" Grid.Row="2" />
+        <TextBox Grid.Row="2" Grid.Column="1" Height="30"
                  Text="{Binding Path=Model.Salary}" />
-        <Button Content="New Worker" Grid.Row="4" Grid.ColumnSpan="2" 
+        <Button Content="New Worker" Grid.Row="3" Grid.ColumnSpan="2" 
                 Height="30" Width="100">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">

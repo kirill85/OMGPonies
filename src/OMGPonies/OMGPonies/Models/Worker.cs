@@ -8,17 +8,6 @@ namespace OMGPonies
 {
     public class Worker : ModelBase<Worker>
     {
-        private uint workerId;
-        public uint WorkerId
-        {
-            get { return workerId; }
-            set
-            {
-                workerId = value;
-                NotifyPropertyChanged(m => m.workerId);
-            }
-        }
-
         private string workerName;
         public string WorkerName
         {
