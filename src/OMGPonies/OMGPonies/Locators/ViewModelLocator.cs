@@ -50,13 +50,13 @@ namespace OMGPonies
             get { return new MainPageViewModel(); }
         }
 
-        // Create CustomerViewModel on demand
-        public CustomerViewModel CustomerViewModel
+        // Create WorkerViewModel on demand
+        public WorkerViewModel WorkerViewModel
         {
             get
             {
-                ICustomerServiceAgent serviceAgent = new MockCustomerServiceAgent();
-                return new CustomerViewModel(serviceAgent);
+                IWorkerServiceAgent serviceAgent = new MockWorkerServiceAgent();
+                return new WorkerViewModel(serviceAgent);
             }
         }
     }

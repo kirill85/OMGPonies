@@ -3,8 +3,8 @@ using System.Linq;
 
 namespace OMGPonies
 {
-    public interface ICustomerServiceAgent
+    public interface IWorkerServiceAgent
     {
-        Customer CreateCustomer();
+        Worker CreateWorker();
     }
 }

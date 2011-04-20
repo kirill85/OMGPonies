@@ -3,16 +3,16 @@ using System.Linq;
 
 namespace OMGPonies
 {
-    public class MockCustomerServiceAgent : ICustomerServiceAgent
+    public class MockWorkerServiceAgent : IWorkerServiceAgent
     {
-        // Create a fake customer
-        public Customer CreateCustomer()
+        // Create a fake Worker
+        public Worker CreateWorker()
         {
-            return new Customer
+            return new Worker
             {
-                CustomerId = 1,
-                CustomerName = "John Doe",
-                City = "Dallas"
+                WorkerId = 1,
+                WorkerName = "John Doe",
+                Workshop = "Dallas"
             };
         }
     }

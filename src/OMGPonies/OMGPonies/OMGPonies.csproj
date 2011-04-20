@@ -68,15 +68,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Views\CustomerView.xaml.cs">
-      <DependentUpon>CustomerView.xaml</DependentUpon>
+    <Compile Include="Views\WorkerView.xaml.cs">
+      <DependentUpon>WorkerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Locators\ViewModelLocator.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Services\ICustomerServiceAgent.cs" />
     <Compile Include="Services\MockCustomerServiceAgent.cs" />
-    <Compile Include="ViewModels\CustomerViewModel.cs" />
-    <Page Include="Views\CustomerView.xaml">
+    <Compile Include="ViewModels\WorkerViewModel.cs" />
+    <Page Include="Views\WorkerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,7 +94,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

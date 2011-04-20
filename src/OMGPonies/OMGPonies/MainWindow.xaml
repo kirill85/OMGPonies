@@ -6,6 +6,6 @@
         DataContext="{Binding Source={StaticResource Locator}, Path=[MainPageViewModel]}">
     <StackPanel>
         <TextBlock Text="{Binding Path=BannerText}" FontFamily="Verdana" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" />
-        <my:CustomerView />
+        <my:WorkerView />
     </StackPanel>
 </Window>

@@ -22,18 +22,18 @@ namespace OMGPonies
     /// Use the <strong>mvvmprop</strong> snippet to add bindable properties to this ViewModel.
     /// </para>
     /// </summary>
-    public class CustomerViewModel : ViewModelDetailBase<CustomerViewModel, Customer>
+    public class WorkerViewModel : ViewModelDetailBase<WorkerViewModel, Worker>
     {
         #region Initialization and Cleanup
 
-        // Add a member for ICustomerServiceAgent
-        private ICustomerServiceAgent serviceAgent;
+        // Add a member for IWorkerServiceAgent
+        private IWorkerServiceAgent serviceAgent;
 
         // Default ctor
-        public CustomerViewModel() { }
+        public WorkerViewModel() { }
 
-        // Ctor that accepts ICustomerServiceAgent
-        public CustomerViewModel(ICustomerServiceAgent serviceAgent)
+        // Ctor that accepts IWorkerServiceAgent
+        public WorkerViewModel(IWorkerServiceAgent serviceAgent)
         {
             this.serviceAgent = serviceAgent;
         }
@@ -55,21 +55,21 @@ namespace OMGPonies
 
         #region Methods
 
-        // Set the model to a new customer
-        public void NewCustomer()
+        // Set the model to a new Worker
+        public void NewWorker()
         {
-            base.Model = serviceAgent.CreateCustomer();
+            base.Model = serviceAgent.CreateWorker();
         }
 
         #endregion
 
         #region Commands
 
-        public ICommand NewCustomerCommand
+        public ICommand NewWorkerCommand
         {
             get
             {
-                return new DelegateCommand(NewCustomer);
+                return new DelegateCommand(NewWorker);
             }
         }
 

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace OMGPonies
 {
     /// <summary>
-    /// Interaction logic for CustomerView.xaml
+    /// Interaction logic for WorkerView.xaml
     /// </summary>
-    public partial class CustomerView : UserControl
+    public partial class WorkerView : UserControl
     {
-        public CustomerView()
+        public WorkerView()
         {
             InitializeComponent();
         }
